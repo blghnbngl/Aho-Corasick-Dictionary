@@ -132,7 +132,7 @@ public class AhoCorTree {
 		
 		Node n=(this.nodes).get(0);
 		
-		boolean flag=true;		//This will enable us to differentiate compass and ass, for example
+		boolean flag=true;		//This will enable us not to censor compass, for example
 		
 		for(i=0;i<s.length();i++)
 		{
@@ -157,7 +157,7 @@ public class AhoCorTree {
 					n=(this.nodes).get(0);	//Start from scratch
 				}
 				else
-					flag=false;		//Do not look for substrings. Like Dickens vs Dick
+					flag=false;		//Do not look for substrings. Like Dickens won't be censored
 			}
 			else
 			{
